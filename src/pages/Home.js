@@ -4,7 +4,7 @@ import profilepic from '../assets/profile-pic.png';
 import resu from '../assets/Resume(NEW).pdf';
 export default function Home() {
   return (
-    <div className="background">
+    <div id='home'>
     <section id="profile" className="flex justify-center items-center h-screen">
     <div className="section__pic-container">
     <img src={profilepic} alt="vinay" />
@@ -18,7 +18,7 @@ export default function Home() {
           className="btn btn-color-2"
           onClick={() => window.open(resu)}
         >
-          Download CV
+          Download CV 
         </button>
          <button className="btn btn-color-1" >
           Contact Info
@@ -30,13 +30,13 @@ export default function Home() {
           src={linked}
           alt="My LinkedIn profile"
           className="icon"
-          onClick={() => window.location.href='https://linkedin.com/'}
+          onClick={() => window.location.href='https://www.linkedin.com/in/vinaychakravarthi10110'}
         />
         <img
           src={githu}
           alt="My Github profile"
           className="icon"
-          onClick={() => window.location.href='https://github.com/'}
+          onClick={() => window.location.href='https://github.com/vinay10110'}
         />
       </div>
     </div>

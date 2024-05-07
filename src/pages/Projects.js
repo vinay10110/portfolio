@@ -4,7 +4,7 @@ import p2 from '../assets/Screenshot 2024-04-24 090321.png'
 import p3 from '../assets/Screenshot 2024-04-28 171334.png'
 const Projects = () => {
   return (
-    <div>
+  <div id='Projects'>
     <section id="projects">
     <p className="section__text__p1">Browse My Recent</p>
     <h1 className="title">Projects</h1>
@@ -15,7 +15,7 @@ const Projects = () => {
             <img
               src={p1}
               alt="Project 1"
-              class="project-img"
+              className="project-img"
             />
           </div>
           <div classname='project-content'>
@@ -26,15 +26,20 @@ const Projects = () => {
 	Created a docker image and deployed on render.
 </p>
           <div className="btn-container">
-            <button
+           <button
               className="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onClick={()=>{
+                   window.location.href="https://github.com/vinay10110/Weather-Application"
+              }}
             >
               Github
             </button>
+            
             <button
               className="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onClick={()=>{
+        window.location.href="https://weatherapp-latest.onrender.com"
+              }}
             >
               Live Demo
             </button>
@@ -46,7 +51,7 @@ const Projects = () => {
             <img
               src={p2}
               alt="Project 1"
-              class="project-img"
+              className="project-img"
             />
           </div>
           <div>
@@ -59,13 +64,17 @@ const Projects = () => {
           <div className="btn-container">
             <button
               className="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onClick={()=>{
+                window.location.href="https://github.com/vinay10110/Blog-Application"
+                      }}
             >
               Github
             </button>
             <button
               className="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onClick={()=>{
+                window.location.href="https://blog-application-wj24.vercel.app"
+                      }}
             >
               Live Demo
             </button>
@@ -77,24 +86,30 @@ const Projects = () => {
             <img
               src={p3}
               alt="Project 1"
-              class="project-img"
+              className="project-img"
             />
           </div>
           <div>
           <h2 className="experience-sub-title project-title">Finance Application</h2>
-          <p>cjdisbvkflebvkjfe dkvnlvb jrbvirovb kdbvobvojrebjbiebviebfioebcdbvkeeifbdjfbvjebvidbvievieb</p>
+          <p>	Developed a finance application using TypeScript for frontend and Express.js for backend, with MongoDB for efficient data storage and retrieval.
+ Utilized Recharts library to create compelling data visualizations, enabling users to interpret financial data effectively.
+ Integrated machine learning algorithm  linear regression, to provide predictive insights, enhancing decision-making capabilities for users.</p>
           <div className="btn-container">
             <button
               className="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onClick={()=>{
+                window.location.href="https://github.com/vinay10110/financeapp"
+                      }}
             >
               Github
             </button>
             <button
               className="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
+              onClick={()=>{
+                window.location.href="https://financeapp-topaz.vercel.app"
+                      }}
             >
-              Live Demo
+              Live Demo 
             </button>
             </div>
           </div>
