@@ -2,6 +2,7 @@ import githu from '../assets/github.png';
 import linked from '../assets/linkedin.png';
 import profilepic from '../assets/profile-pic.png';
 import resu from '../assets/Resume(NEW).pdf';
+import { Link } from 'react-scroll';
 export default function Home() {
   return (
     <div id='home'>
@@ -21,7 +22,8 @@ export default function Home() {
           Download CV 
         </button>
          <button className="btn btn-color-1" >
-          Contact Info
+          <Link to='Contact' smooth={true} duration={500}>Contact Info</Link>
+          
         </button>
        
       </div>
